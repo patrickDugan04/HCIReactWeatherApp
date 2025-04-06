@@ -1,0 +1,166 @@
+/* Used chat gpt to help implement */
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fcfcfc;
+  /* background: linear-gradient(to bottom, #6a9bd8, #c0d8f0); */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.opac {
+  border-radius: 15px;
+  background: hsl(213, 16%, 49%); 
+  /* background: #0A0129; */
+}
+
+.top-item {
+  width: 70px;
+  height: 150px;
+  margin: auto;
+}
+
+#top-banner{
+  display: flex;
+  flex-direction: row;
+}
+#main-info{
+  margin: auto;
+  width: 50%;
+  border: 3px;
+}
+
+#temperature {
+  font-size: 50px;
+  font-weight: bold;
+}
+.headingInfo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hor-forecast {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0;
+  flex-grow: 1;
+}
+.hour {
+  font-size: 14px;
+  color: #ffffff;
+  height: 90%;
+  margin: 1px;
+  padding-top: 4px;
+  /* maybe padding could help with time being too close to top */
+}
+.daily-forecast {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.day {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  width: 120%;
+  height: 50%;
+}
+.info-box {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 7px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: 2%; 
+}
+
+.small-icon{
+  width: 40px;
+  height: 40px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.L-R {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: space-around; 
+  gap: 90px;
+  margin: 20px 0;
+  flex-grow: 1;
+}
+
+#additional-content {
+  font-weight: bold;
+  padding: 4px;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Drop Down Stuff */
+.hidden {
+  display: none;
+}
+.weather-container {
+  position: relative; 
+  width: 350px;
+  height: 700px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #6a9bd8, #c0d8f0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup {
+  background-color: rgb(64, 43, 43);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: auto;
+  font-size: 12px; 
+  z-index: 1000; 
+}
+
+.dropdown {
+  background-color: rgb(64, 43, 43);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.dropdown li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+
+.info-box:hover {
+  background: hsl(214, 18%, 16%); 
+}
